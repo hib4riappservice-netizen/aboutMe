@@ -315,16 +315,18 @@ a {
   }
 
   .hero-bar {
+    padding: 16px 6vw;
     gap: 12px;
   }
   .bio {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
+    line-height: 1.55;
   }
   .bio-break {
     display: inline;
   }
   .copyright {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
 
   .social-links {
