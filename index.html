@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIB4RI | アプリ開発サービス</title>
+    <meta name="description" content="HIB4RIが開発しているアプリ・サービスをまとめたポータルページです。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="avatar-wrap">
+          <img id="avatar-img" src="" alt="" />
+        </div>
+        <div class="hero-text">
+          <p class="tagline" id="tagline"></p>
+          <h1 class="brand-name" id="brand-name">HIB4RI</h1>
+        </div>
+      </div>
+      <div class="hero-bar">
+        <p class="bio" id="bio"></p>
+        <div class="social-links" id="social-links"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="sites">
+        <div class="sites-heading">
+          <h2>開発サイト一覧</h2>
+          <span id="site-count"></span>
+        </div>
+        <div class="site-grid" id="site-grid"></div>
+      </section>
+    </main>
+
+    <footer>&copy; <span id="year"></span> HIB4RI</footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
