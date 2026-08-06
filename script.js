@@ -31,8 +31,10 @@ function renderSites() {
         <img src="${site.image}" alt="${site.name}のロゴ" loading="lazy" />
       </a>
       <div class="site-body">
-        <span class="site-category">${site.category}</span>
-        <h3 class="site-name">${site.name}</h3>
+        <div class="site-name-row">
+          <h3 class="site-name">${site.name}</h3>
+          <span class="site-category">${site.category}</span>
+        </div>
         <p class="site-desc">${site.description}</p>
         <a class="site-link" href="${site.url}" target="_blank" rel="noopener noreferrer">サイトを見る →</a>
       </div>

@@ -230,8 +230,16 @@ a {
   flex: 1;
 }
 
+.site-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
 .site-category {
-  align-self: flex-start;
+  flex-shrink: 0;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -251,7 +259,7 @@ a {
 .site-desc {
   margin: 0;
   color: var(--text-sub);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   line-height: 1.7;
   flex: 1;
 }
@@ -338,7 +346,7 @@ footer {
     font-size: 1rem;
   }
   .site-desc {
-    font-size: 0.82rem;
+    font-size: 0.76rem;
     line-height: 1.55;
   }
 }
