@@ -1,17 +1,17 @@
 :root {
-  --navy: #454562;
-  --navy-soft: #7c7ca2;
-  --blue-deep: #4a5a94;
-  --blue: #6b83c4;
-  --blue-soft: #a9c0e8;
-  --lavender: #ab9de0;
-  --paper: #faf8f4;
+  --navy: #161616;
+  --navy-soft: #4d4d4d;
+  --blue-deep: #1f1f1f;
+  --blue: #3d3d3d;
+  --blue-soft: #cfcfcf;
+  --lavender: #e6e6e6;
+  --paper: #f6f6f4;
   --card: #ffffff;
-  --text-main: #2c2f3a;
-  --text-sub: #6b6f7d;
+  --text-main: #141414;
+  --text-sub: #666666;
   --radius-lg: 24px;
   --radius-md: 16px;
-  --shadow: 0 8px 30px rgba(74, 90, 148, 0.12);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -47,13 +47,7 @@ a {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(107, 131, 196, 0.55), transparent 40%),
-    radial-gradient(circle at 30% 45%, rgba(171, 157, 224, 0.45), transparent 45%),
-    radial-gradient(circle at 55% 10%, rgba(169, 192, 232, 0.5), transparent 38%),
-    radial-gradient(circle at 78% 30%, rgba(107, 131, 196, 0.3), transparent 42%),
-    radial-gradient(circle at 15% 70%, rgba(255, 255, 255, 0.9), transparent 30%);
-  filter: blur(6px);
+  background: linear-gradient(180deg, #ffffff 0%, #e2e2e2 100%);
 }
 
 .hero-content {
@@ -97,18 +91,20 @@ a {
 
 .brand-name {
   margin: 0;
-  font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+  font-family: "Space Grotesk", "Noto Sans JP", sans-serif;
   font-weight: 700;
   font-size: clamp(2.4rem, 6vw, 4rem);
   color: var(--blue-deep);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.14em;
 }
 
 .hero-bar {
   position: relative;
   z-index: 1;
-  background: var(--navy);
-  color: #f2f2f6;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 22%),
+    linear-gradient(135deg, #0a0a0a 0%, #262626 30%, #0d0d0d 55%, #2c2c2c 78%, #0a0a0a 100%);
+  color: #f2f2f2;
   padding: 26px 8vw;
 }
 
@@ -116,7 +112,7 @@ a {
   margin: 0;
   max-width: 640px;
   line-height: 1.9;
-  color: #d8d9e4;
+  color: #d6d6d6;
   font-size: 0.95rem;
 }
 
@@ -174,7 +170,7 @@ a {
 }
 
 .sites-heading h2 {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: var(--navy);
   font-size: 1.6rem;
   margin: 0;
@@ -195,8 +191,8 @@ a {
   background: var(--card);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(74, 90, 148, 0.3);
-  border: 1px solid rgba(74, 90, 148, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.14);
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -205,15 +201,15 @@ a {
 
 .site-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(74, 90, 148, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
 }
 
 /* 正方形・横長どちらのロゴが来ても収まる、高さ固定の帯 */
 .site-logo-banner {
   height: 116px;
   flex-shrink: 0;
-  background: #e6e9f2;
-  border-bottom: 1px solid rgba(69, 69, 98, 0.16);
+  background: #ececea;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,7 +236,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.05em;
   color: var(--blue-deep);
-  background: #eaf0fb;
+  background: #efefed;
   padding: 4px 12px;
   border-radius: 999px;
 }
