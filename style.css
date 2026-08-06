@@ -266,7 +266,7 @@ a {
 
 .site-link {
   margin-top: 4px;
-  align-self: flex-start;
+  align-self: flex-end;
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--blue-deep);
