@@ -85,6 +85,9 @@ a {
 
 .hero-text {
   min-width: 240px;
+  background: linear-gradient(135deg, rgba(169, 192, 232, 0.55), rgba(171, 157, 224, 0.55));
+  border-radius: var(--radius-lg);
+  padding: 20px 32px;
 }
 
 .tagline {
@@ -110,11 +113,6 @@ a {
   background: var(--navy);
   color: #f2f2f6;
   padding: 26px 8vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
 }
 
 .bio {
@@ -127,29 +125,31 @@ a {
 }
 
 .social-links {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  right: 8vw;
   display: flex;
   gap: 12px;
-  flex-shrink: 0;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 22px;
+  padding: 10px 20px;
   border-radius: 999px;
-  border: 1.5px solid rgba(255, 255, 255, 0.7);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--navy);
   color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
+  box-shadow: var(--shadow);
   transition: background 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
 }
 
 .social-link:hover {
-  background: #ffffff;
-  color: var(--navy);
+  background: var(--blue-deep);
   transform: translateY(-2px);
 }
 
@@ -295,16 +295,24 @@ footer {
   }
   .hero-text {
     min-width: 0;
+    padding: 14px 18px;
   }
   .brand-name {
     font-size: clamp(1.6rem, 8vw, 2.2rem);
+    white-space: nowrap;
   }
   .tagline {
     font-size: 0.78rem;
+    white-space: nowrap;
   }
-  .hero-bar {
-    flex-direction: column;
-    align-items: flex-start;
+
+  .social-links {
+    top: 16px;
+    right: 5vw;
+  }
+  .social-link {
+    padding: 8px 16px;
+    font-size: 0.85rem;
   }
 
   .site-card {
