@@ -4,13 +4,18 @@
 const PROFILE = {
   name: "HIB4RI",
   tagline: "アプリ開発サービス",
-  bio: "誰かの「困った」を解決したい ――― そんな思いで個人開発をしています。",
+  bio: '誰かの「困った」を解決したい ―――<br class="bio-break">そんな思いで個人開発をしています。',
   avatar: "assets/avatar.png",
   social: [
     {
       label: "X",
       url: "https://x.com/hib4ri_app",
       icon: "x",
+    },
+    {
+      label: "SPOON",
+      url: "https://www.spooncast.net/jp/@hib4ri?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=317825027&utm_term=317825027&ts=1786022145472",
+      icon: "spoon",
     },
   ],
 };

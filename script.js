@@ -7,7 +7,7 @@ function renderProfile() {
   document.getElementById("avatar-img").alt = PROFILE.name;
   document.getElementById("tagline").textContent = PROFILE.tagline;
   document.getElementById("brand-name").textContent = PROFILE.name;
-  document.getElementById("bio").textContent = PROFILE.bio;
+  document.getElementById("bio").innerHTML = PROFILE.bio;
 
   const socialWrap = document.getElementById("social-links");
   socialWrap.innerHTML = PROFILE.social

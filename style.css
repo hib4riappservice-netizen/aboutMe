@@ -85,9 +85,6 @@ a {
 
 .hero-text {
   min-width: 240px;
-  background: linear-gradient(135deg, rgba(169, 192, 232, 0.55), rgba(171, 157, 224, 0.55));
-  border-radius: var(--radius-lg);
-  padding: 20px 32px;
 }
 
 .tagline {
@@ -121,7 +118,10 @@ a {
   line-height: 1.9;
   color: #d8d9e4;
   font-size: 0.95rem;
-  white-space: pre-line;
+}
+
+.bio-break {
+  display: none;
 }
 
 .social-links {
@@ -130,27 +130,27 @@ a {
   top: 24px;
   right: 8vw;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 12px;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: var(--shadow);
-  transition: background 0.2s ease, transform 0.2s ease;
+  gap: 6px;
+  padding: 4px 2px;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
   white-space: nowrap;
 }
 
 .social-link:hover {
-  background: var(--blue-deep);
-  transform: translateY(-2px);
+  color: var(--blue-deep);
+  border-color: var(--blue-deep);
 }
 
 .social-link svg {
@@ -195,7 +195,8 @@ a {
   background: var(--card);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: 0 16px 40px rgba(74, 90, 148, 0.3);
+  border: 1px solid rgba(74, 90, 148, 0.2);
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -211,7 +212,8 @@ a {
 .site-logo-banner {
   height: 116px;
   flex-shrink: 0;
-  background: linear-gradient(135deg, var(--blue-deep), var(--lavender));
+  background: #e6e9f2;
+  border-bottom: 1px solid rgba(69, 69, 98, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,7 +297,6 @@ footer {
   }
   .hero-text {
     min-width: 0;
-    padding: 14px 18px;
   }
   .brand-name {
     font-size: clamp(1.6rem, 8vw, 2.2rem);
@@ -306,13 +307,21 @@ footer {
     white-space: nowrap;
   }
 
+  .bio {
+    font-size: 0.85rem;
+  }
+  .bio-break {
+    display: inline;
+  }
+
   .social-links {
     top: 16px;
     right: 5vw;
+    gap: 14px;
   }
   .social-link {
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    padding: 2px;
+    font-size: 0.8rem;
   }
 
   .site-card {
