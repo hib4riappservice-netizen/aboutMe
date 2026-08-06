@@ -315,8 +315,6 @@ a {
   }
 
   .hero-bar {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 12px;
   }
   .bio {
@@ -326,7 +324,7 @@ a {
     display: inline;
   }
   .copyright {
-    align-self: flex-end;
+    font-size: 0.72rem;
   }
 
   .social-links {
