@@ -27,6 +27,6 @@ const SITES = [
     description:
       "配信者の「話したいのに話せない」を解決するための話題管理サービス。",
     url: "https://www.wadai-no-todana.com/",
-    image: "assets/logo.png",
+    image: "assets/wadai-no-todana-logo.png",
   },
 ];
