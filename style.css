@@ -284,10 +284,48 @@ footer {
 
 @media (max-width: 560px) {
   .hero-content {
-    padding: 56px 6vw 36px;
+    padding: 40px 6vw 32px;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .avatar-wrap {
+    width: 84px;
+    height: 84px;
+    border-width: 3px;
+  }
+  .hero-text {
+    min-width: 0;
+  }
+  .brand-name {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+  .tagline {
+    font-size: 0.78rem;
   }
   .hero-bar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-card {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .site-logo-banner {
+    width: 110px;
+    height: auto;
+    align-self: stretch;
+    padding: 12px;
+  }
+  .site-body {
+    padding: 14px 16px;
+    gap: 6px;
+  }
+  .site-name {
+    font-size: 1rem;
+  }
+  .site-desc {
+    font-size: 0.82rem;
+    line-height: 1.55;
   }
 }
