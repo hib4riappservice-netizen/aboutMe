@@ -13,9 +13,8 @@ function renderProfile() {
   socialWrap.innerHTML = PROFILE.social
     .map(
       (s) => `
-      <a class="social-link" href="${s.url}" target="_blank" rel="noopener noreferrer">
-        ${s.icon === "x" ? xIcon() : ""}
-        <span>${s.label}</span>
+      <a class="social-link" href="${s.url}" target="_blank" rel="noopener noreferrer" aria-label="${s.label}">
+        ${s.icon === "x" ? xIcon() : `<span>${s.label}</span>`}
       </a>`
     )
     .join("");
