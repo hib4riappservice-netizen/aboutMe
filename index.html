@@ -21,7 +21,13 @@
   </head>
   <body>
     <div id="splash" class="splash">
-      <img src="assets/logo-seal.png" alt="HIB4RI" class="splash-logo" />
+      <img
+        src="assets/icons/icon-512.png"
+        width="512"
+        height="512"
+        alt="HIB4RI"
+        class="splash-logo"
+      />
     </div>
 
     <header class="hero">
@@ -57,12 +63,12 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      window.addEventListener("load", () => {
-        const remaining = Math.max(0, 1000 - performance.now());
-        setTimeout(() => {
-          document.getElementById("splash").classList.add("splash-hide");
-        }, remaining);
-      });
+      // Timed from navigation start, not window "load" -- waiting for every
+      // image/font to finish would make the hold time vary with network
+      // speed (near-instant when cached, skipped entirely when slow).
+      setTimeout(() => {
+        document.getElementById("splash").classList.add("splash-hide");
+      }, Math.max(0, 1000 - performance.now()));
     </script>
   </body>
 </html>
