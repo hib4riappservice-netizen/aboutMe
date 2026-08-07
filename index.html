@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="splash" class="splash">
+      <img src="assets/logo-seal.png" alt="HIB4RI" class="splash-logo" />
+    </div>
+
     <header class="hero">
       <div class="hero-bg"></div>
       <div class="social-links" id="social-links"></div>
@@ -52,6 +56,13 @@
     <script src="script.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      window.addEventListener("load", () => {
+        const remaining = Math.max(0, 1000 - performance.now());
+        setTimeout(() => {
+          document.getElementById("splash").classList.add("splash-hide");
+        }, remaining);
+      });
     </script>
   </body>
 </html>

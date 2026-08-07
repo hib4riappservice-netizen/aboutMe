@@ -18,6 +18,30 @@
   box-sizing: border-box;
 }
 
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+  transition: opacity 0.4s ease;
+}
+
+.splash-logo {
+  width: 42vw;
+  max-width: 220px;
+  min-width: 120px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.splash-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 body {
   margin: 0;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
