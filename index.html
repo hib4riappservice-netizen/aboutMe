@@ -7,25 +7,17 @@
     <meta name="description" content="HIB4RIが開発しているアプリ・サービスをまとめたポータルページです。" />
     <style>
       /* Inlined so it applies before any external stylesheet finishes
-         loading -- otherwise the splash logo briefly renders at its native
-         512px size and visibly shrinks once style.css catches up. */
+         loading. No logo here -- Android/Chrome already draws its own
+         native splash (from the manifest icon) before this page paints,
+         so showing our own logo right after made the same mark flash at
+         two different sizes back to back. This just holds the page
+         background color briefly for a smoother handoff. */
       .splash {
         position: fixed;
         inset: 0;
         z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background: #f6f6f4;
         transition: opacity 0.4s ease;
-      }
-      .splash-logo {
-        width: 42vw;
-        max-width: 220px;
-        min-width: 120px;
-        aspect-ratio: 1 / 1;
-        height: auto;
-        border-radius: 16px;
       }
       .splash-hide {
         opacity: 0;
@@ -47,15 +39,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="splash" class="splash">
-      <img
-        src="assets/icons/icon-512.png"
-        width="512"
-        height="512"
-        alt="HIB4RI"
-        class="splash-logo"
-      />
-    </div>
+    <div id="splash" class="splash"></div>
 
     <header class="hero">
       <div class="hero-bg"></div>
