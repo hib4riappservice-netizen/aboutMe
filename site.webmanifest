@@ -3,8 +3,8 @@
   "short_name": "HIB4RI",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#0a0a0a",
+  "background_color": "#f6f6f4",
+  "theme_color": "#f6f6f4",
   "icons": [
     {
       "src": "assets/icons/icon-192.png",
