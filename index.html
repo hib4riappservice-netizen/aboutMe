@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HIB4RI | アプリ開発サービス</title>
     <meta name="description" content="HIB4RIが開発しているアプリ・サービスをまとめたポータルページです。" />
+    <style>
+      /* Inlined so it applies before any external stylesheet finishes
+         loading -- otherwise the splash logo briefly renders at its native
+         512px size and visibly shrinks once style.css catches up. */
+      .splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f6f6f4;
+        transition: opacity 0.4s ease;
+      }
+      .splash-logo {
+        width: 42vw;
+        max-width: 220px;
+        min-width: 120px;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        border-radius: 16px;
+      }
+      .splash-hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
     <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png" />

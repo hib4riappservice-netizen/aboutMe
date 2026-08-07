@@ -18,30 +18,9 @@
   box-sizing: border-box;
 }
 
-.splash {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--paper);
-  transition: opacity 0.4s ease;
-}
-
-.splash-logo {
-  width: 42vw;
-  max-width: 220px;
-  min-width: 120px;
-  aspect-ratio: 1 / 1;
-  height: auto;
-  border-radius: var(--radius-md);
-}
-
-.splash-hide {
-  opacity: 0;
-  pointer-events: none;
-}
+/* .splash / .splash-logo / .splash-hide live inline in index.html's <head>,
+   not here -- they must apply before this stylesheet finishes loading, or
+   the logo briefly renders at its native size and visibly shrinks. */
 
 body {
   margin: 0;
