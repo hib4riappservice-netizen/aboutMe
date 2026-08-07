@@ -160,9 +160,11 @@ a {
   white-space: nowrap;
 }
 
-.social-link:hover {
-  color: var(--blue-deep);
-  border-color: var(--blue-deep);
+@media (hover: hover) {
+  .social-link:hover {
+    color: var(--blue-deep);
+    border-color: var(--blue-deep);
+  }
 }
 
 .social-link svg {
@@ -215,9 +217,11 @@ a {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.site-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+@media (hover: hover) {
+  .site-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+  }
 }
 
 /* 正方形・横長どちらのロゴが来ても収まる、高さ固定の帯 */
@@ -290,9 +294,11 @@ a {
   padding-bottom: 2px;
 }
 
-.site-link:hover {
-  color: var(--navy);
-  border-color: var(--navy);
+@media (hover: hover) {
+  .site-link:hover {
+    color: var(--navy);
+    border-color: var(--navy);
+  }
 }
 
 @media (max-width: 560px) {
