@@ -33,8 +33,8 @@ log_info "既存のタスク管理ファイルをクリア"
 # 既存workerのworktree/ブランチをクリーンアップ
 log_info "🧹 既存workerのworktree/ブランチをクリーンアップ..."
 for i in 1 2 3; do
-    if git worktree list 2>/dev/null | grep -q "aboutme-worker${i}"; then
-        git worktree remove "../aboutme-worker${i}" --force 2>/dev/null || true
+    if git worktree list 2>/dev/null | grep -q "aboutMe-worker${i}"; then
+        git worktree remove "../aboutMe-worker${i}" --force 2>/dev/null || true
     fi
     git branch -D "worker${i}-work" 2>/dev/null || true
 done
