@@ -1,3 +1,7 @@
 .static-server.js
 .serve.log
 .serve.err.log
+
+# team-dev framework
+logs/
+tmp/
