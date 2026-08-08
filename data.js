@@ -29,8 +29,7 @@ const SITES = [
   {
     name: "ワダイの戸棚",
     category: "ツール",
-    description:
-      "配信者の「話したいのに話せない」を解決するための話題管理サービス。",
+    description: "「話したいのに話せない」を解決するための話題管理サービス。",
     url: "https://www.wadai-no-todana.com/",
     image: "assets/wadai-no-todana-logo.png",
   },
