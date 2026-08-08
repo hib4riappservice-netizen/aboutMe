@@ -28,10 +28,17 @@ const PROFILE = {
 const SITES = [
   {
     name: "ワダイの戸棚",
-    category: "配信",
+    category: "ツール",
     description:
       "配信者の「話したいのに話せない」を解決するための話題管理サービス。",
     url: "https://www.wadai-no-todana.com/",
     image: "assets/wadai-no-todana-logo.png",
+  },
+  {
+    name: "あかさたなみだくじ",
+    category: "ゲーム",
+    description: "五十音で遊ぶ、あみだくじ式の即興トーク地雷ゲーム。",
+    url: "https://akasatanamidakuji.vercel.app/#",
+    image: "assets/akasatanamidakuji-logo.png",
   },
 ];
