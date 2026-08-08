@@ -180,7 +180,7 @@ a {
 
 .sites-heading {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 32px;
@@ -188,15 +188,36 @@ a {
 }
 
 .sites-heading h2 {
+  position: relative;
   font-family: "Noto Sans JP", sans-serif;
   color: var(--navy);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   margin: 0;
+  padding-left: 18px;
+}
+
+.sites-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 22px;
+  border-radius: 3px;
+  background: var(--navy);
+  transform: translateY(-50%);
 }
 
 .sites-heading span {
   color: var(--text-sub);
-  font-size: 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: #efefed;
+  padding: 5px 14px;
+  border-radius: 999px;
 }
 
 .site-grid {
@@ -357,7 +378,7 @@ a {
     max-width: 100%;
   }
   .site-logo-banner {
-    width: 110px;
+    width: 100px;
     height: auto;
     align-self: stretch;
     padding: 12px;
@@ -367,7 +388,10 @@ a {
     gap: 6px;
   }
   .site-name {
-    font-size: 1rem;
+    font-size: 0.88rem;
+  }
+  .site-category {
+    padding: 4px 10px;
   }
   .site-desc {
     font-size: 0.76rem;
